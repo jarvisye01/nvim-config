@@ -18,9 +18,11 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.scrolloff = 5
 vim.opt.mouse = ''
+vim.opt.termguicolors = true
+vim.opt.signcolumn = "yes"
 
 -- nvim global var
 vim.g.mapleader = ','
 
 -- nvim window var
-vim.wo.wrap = false
+vim.wo.wrap = true

@@ -12,9 +12,12 @@ vim.cmd [[
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'fatih/vim-go',
     Plug 'Mofiqul/dracula.nvim',
+    Plug 'catppuccin/nvim', { 'as': 'catppuccin' },
     Plug 'nvim-treesitter/nvim-treesitter',
     Plug 'nvim-lua/plenary.nvim',
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' },
+    Plug 'f-person/git-blame.nvim',
+    Plug 'lewis6991/gitsigns.nvim',
     call plug#end()
 ]]
 
