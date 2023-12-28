@@ -18,6 +18,7 @@ vim.cmd [[
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' },
     Plug 'f-person/git-blame.nvim',
     Plug 'lewis6991/gitsigns.nvim',
+    Plug 'akinsho/toggleterm.nvim', {'tag' : '*'},
     call plug#end()
 ]]
 

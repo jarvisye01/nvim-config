@@ -14,8 +14,10 @@ require('hardline').setup {
     bufferline = true,  -- disable bufferline
 }
 
+-- catppuccin
+-- vim.cmd.colorscheme "catppuccin"
 -- dracula
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "dracula"
 
 -- nvim-treesitter
 require('nvim-treesitter.configs').setup {
@@ -25,7 +27,7 @@ require('nvim-treesitter.configs').setup {
     highlight = {
         enable = true,
         disable = function(lang, buf)
-            local max_filesize = 100 * 1024 -- 100 KB
+            local max_filesize = 1024 * 1024 -- 1MB
             local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
             if ok and stats and stats.size > max_filesize then
                 return true
@@ -67,4 +69,16 @@ require('gitsigns').setup {
     numhl = false,
     linehl = false,
     word_diff = false,
+}
+
+vim.keymap.set('n', '<leader>gn', ':Gitsigns next_hunk<CR>', { silent = true })
+vim.keymap.set('n', '<leader>gp', ':Gitsigns prev_hunk<CR>', { silent = true })
+
+-- ToggleTerm
+require('toggleterm').setup {
+    open_mapping = [[<C-\>]],
+    close_on_exit = true,
+    insert_mappings = true,
+    terminal_mappings = true,
+    direction = 'float',
 }
