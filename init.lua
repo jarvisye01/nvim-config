@@ -22,6 +22,10 @@ vim.cmd [[
     Plug 'lukas-reineke/indent-blankline.nvim',
     Plug 'sindrets/diffview.nvim',
     Plug 'kylechui/nvim-surround',
+    Plug 'nvim-tree/nvim-web-devicons',
+    Plug 'stevearc/aerial.nvim',
+    Plug 'windwp/nvim-autopairs',
+    Plug 'navarasu/onedark.nvim',
     call plug#end()
 ]]
 

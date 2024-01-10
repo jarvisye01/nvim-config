@@ -15,9 +15,19 @@ require('hardline').setup {
 }
 
 -- catppuccin
+-- require("catppuccin").setup {
+--     flavour = "macchiato",
+-- }
 -- vim.cmd.colorscheme "catppuccin"
+
 -- dracula
-vim.cmd.colorscheme "dracula"
+-- vim.cmd.colorscheme "dracula"
+
+-- onedark
+require("onedark").setup {
+    style = "warm",
+}
+vim.cmd.colorscheme "onedark"
 
 -- nvim-treesitter
 require('nvim-treesitter.configs').setup {
@@ -97,3 +107,9 @@ require('diffview').setup {
 
 -- Nvim Surround
 require('nvim-surround').setup {}
+
+-- Aerial
+require("aerial").setup {}
+
+-- Nvim Autopairs
+require("nvim-autopairs").setup {}
