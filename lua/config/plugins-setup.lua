@@ -82,3 +82,18 @@ require('toggleterm').setup {
     terminal_mappings = true,
     direction = 'float',
 }
+
+-- Indent Blankline
+-- require('ibl').setup {}
+
+-- Diff View
+require('diffview').setup {
+    view = {
+        merge_tool = {
+            layout = 'diff3_mixed',
+        },
+    },
+}
+
+-- Nvim Surround
+require('nvim-surround').setup {}

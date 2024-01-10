@@ -19,6 +19,9 @@ vim.cmd [[
     Plug 'f-person/git-blame.nvim',
     Plug 'lewis6991/gitsigns.nvim',
     Plug 'akinsho/toggleterm.nvim', {'tag' : '*'},
+    Plug 'lukas-reineke/indent-blankline.nvim',
+    Plug 'sindrets/diffview.nvim',
+    Plug 'kylechui/nvim-surround',
     call plug#end()
 ]]
 

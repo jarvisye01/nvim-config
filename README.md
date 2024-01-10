@@ -22,3 +22,8 @@
 - nvim-treesitter：treesitter插件；
 - plenary：telescope依赖插件；
 - telescope：以浮窗的形式提供fuzzy search、git等各种功能；
+- git-blame：展示git-blame信息，方便查问题找人；
+- gitsigns：git操作集成插件；
+- indent-blankline：缩进对齐插件；
+- diffview：diff插件；
+- nvim-surround：快速添加、修改'"", '', (), []'等符号的插件；
